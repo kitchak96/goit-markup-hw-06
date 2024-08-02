@@ -195,13 +195,16 @@ p {
 
 .section-three-all {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  /*width: calc((100% - 72px) / 4);*/
+  width: 264px;
+
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .section-four {
-  padding: 120px 0;
+  /*padding: 120px 0;*/
+  padding: 96px 0px;
 }
 .section-two-p {
   font-weight: 400;
@@ -238,17 +241,26 @@ p {
 }
 .section-three {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  /* padding: 120px 0;*/
+  padding: 96px 0;
 }
 .container-three {
-  padding: 0 15px;
-  width: 1158px;
+  width: 320px;
+
+  /*width: 1158px;
+  padding: 0 15px;*/
 }
 .container-four {
-  width: 1158px;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  /*width: 1158px;*/
 }
 .section-four-all {
-  width: calc((100% - 48px) / 3);
+  /*width: calc((100% - 48px) / 3);*/
+ 
+  
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-four-all:hover {
@@ -297,6 +309,7 @@ p {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .list-of-icons:hover,
 .list-of-icons:focus {
   background-color: #4d5ae5;
@@ -319,6 +332,7 @@ p {
   text-transform: capitalize;
   margin: 0 auto;
   margin-bottom: 72px;
+  width: 100%;
 }
 
 .section-three-name {
@@ -337,10 +351,12 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 .list-name-profession {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
 
 .visually-hidden {
@@ -350,7 +366,6 @@ p {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -395,6 +410,8 @@ p {
   transform: translateY(0%);
 }
 .container-for-images {
+  width: 288px;
+  height: 280px;
   position: relative;
   overflow: hidden;
 }
@@ -819,8 +836,33 @@ img {
   .section-two-list-item {
     width: calc((100% - 24px) / 2);
   }
-
   .section-two-list {
+    gap: 72px 24px;
+  }
+/*--------------------------------------------------*/
+  .container-three {
+    width: 768px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .section-three-all {
+    width: calc((100% - 24px) / 2);
+  }
+  .list-of-icons-list {
+    gap: 72px 24px;
+  }
+/*---------------------------------------*/
+  .container-four {
+    width: 768px;
+  }
+  .container-for-images {
+    width: 356px;
+    height: 300px;
+  }
+  .section-four-all {
+    width: calc((100% - 24px) / 2)
+  }
+  .tools {
     gap: 72px 24px;
   }
 }
@@ -840,11 +882,37 @@ img {
   }
   .section-two-icons {
     display: flex;
-}
-.section-two {
-  padding: 120px 0; 
-}
-.section-two-small {
-  text-align: center;
-}
+  }
+  .section-two {
+    padding: 120px 0;
+  }
+  .section-two-small {
+    text-align: center;
+  }
+  /*----------------------------------*/
+  .container-three {
+    width: 1158px;
+    padding: 0 15px;
+  }
+  .section-three-all {
+    width: calc((100% - 72px) / 4);
+  }
+  .section-three {
+    padding: 120px 0;
+  }
+/*-----------------------------------------------------*/
+  .container-four {
+    width: 1158px;
+    padding: 0 15px;
+  }
+
+  .section-four-all {
+    width: calc((100% - 48px) / 3);
+  }
+   .section-four {
+    padding: 120px 0;
+   }
+   .tools {
+    gap: 40px 24px;
+  }
 }
