@@ -55,7 +55,6 @@ p {
   padding: 0;
   background-color: transparent;
   margin-left: auto;
- 
 }
 .header {
   padding: 16px;
@@ -141,6 +140,13 @@ p {
     url(../images/people-office-mob.jpg);
 }
 .mob-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -154,38 +160,54 @@ p {
   padding-left: 16px;
 }
 .modal-button {
-
 }
 .modal-icon {
 }
 .mob-nav-list {
-display: flex;
-flex-direction: column;
-gap: 40px;
-margin-top: 24px;
-margin-bottom: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 24px;
+  margin-bottom: 168px;
 }
 .mob-nav-link {
   font-weight: 700;
-font-size: 36px;
-line-height: 1.11111;
-letter-spacing: 0.02em;
-color: #2e2f42;
- 
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .current1 {
   font-weight: 700;
-font-size: 36px;
-line-height: 1.11111;
-letter-spacing: 0.02em;
-color: #404bbf;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #404bbf;
 }
 .mob-address {
-
 }
 .mob-address-list {
 }
-.mob-address-link {
+.mob-address-link2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  padding-bottom: 24px;
+}
+.mob-address-link1-li {
+  margin-bottom: 24px;
+}
+.mob-address-link1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+}
+.mob-address-link2-li {
+  margin-bottom: 48px;
 }
 .mob-social-media-list-footer {
   display: flex;
@@ -708,9 +730,10 @@ img {
   pointer-events: none;
 }
 
-.modal-container.is-open {
+.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .modal-window {
@@ -974,16 +997,38 @@ img {
     height: 436px;
     padding: 112px 0;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+  .menu-open-button {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header {
+    padding: 0px;
+  }
+  .address {
+    display: flex;
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 }
+
 @media screen and (min-width: 1158px) {
   .container-two {
     padding: 0 15px;
@@ -1047,13 +1092,33 @@ img {
     height: 600px;
     padding: 188px 0;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1.jpg);
+  }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  .menu-open-button {
+    display: none;
+  }
+  .header {
+    padding: 0px;
+  }
+  .address {
+    display: flex;
+    font-style: normal;
+    margin-left: auto;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
   }
 }
