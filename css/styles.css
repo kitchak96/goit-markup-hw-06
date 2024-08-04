@@ -185,6 +185,7 @@ p {
   color: #404bbf;
 }
 .mob-address {
+  margin-bottom: 48px;
 }
 .mob-address-list {
 }
@@ -194,7 +195,6 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 24px;
 }
 .mob-address-link1-li {
   margin-bottom: 24px;
@@ -206,9 +206,9 @@ p {
   letter-spacing: 0.02em;
   color: #4d5ae5;
 }
-.mob-address-link2-li {
-  margin-bottom: 48px;
-}
+/* .mob-address-link2-li {
+  
+} */
 .mob-social-media-list-footer {
   display: flex;
   gap: 40px;
