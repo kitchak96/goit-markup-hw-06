@@ -652,7 +652,6 @@ img {
 .footer-additional-container {
   margin-left: 0;
   margin-right: 0;
-  
 }
 
 /* Styles for subscription form */
@@ -753,7 +752,6 @@ img {
 
   opacity: 0;
   pointer-events: none;
-
 }
 
 .is-open {
@@ -977,6 +975,17 @@ img {
   border: none;
   fill: #f4f4fd;
 }
+
+@media screen and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-mob@2x.jpg');
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container-two {
     width: 768px;
@@ -1065,8 +1074,6 @@ img {
     align-items: baseline;
     flex-direction: column;
     justify-content: left;
-    
-    
   }
   .social-media-footer {
     text-align: left;
@@ -1082,7 +1089,6 @@ img {
     padding: 0;
     width: 453px;
     margin-left: 0;
-  
   }
 
   .subscribe-title {
@@ -1103,39 +1109,46 @@ img {
     margin-left: 24px;
     margin-right: 80px;
   }
-.tablet {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: left;
+  .tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: left;
+  }
+  .footer-additional-container {
+    width: 264px;
+    height: 112px;
+  }
+  .footer-title {
+    justify-content: left;
+    display: flex;
+  }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 72px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.footer-additional-container
-{
-  width: 264px;
-  height: 112px;
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-tab@2x.jpg');
+  }
+}
 
-}
-.footer-title {
- justify-content: left;
- display: flex;
-}
-.modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  
-  transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
-  background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 72px 24px 24px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-}
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (min-width: 1158px) {
   .container-two {
@@ -1186,7 +1199,7 @@ img {
   .tools {
     gap: 40px 24px;
   }
-  
+
   /*--------------------------------------------------*/
   .container {
     width: 1158px;
@@ -1244,7 +1257,6 @@ img {
     align-items: baseline;
     flex-direction: row;
     justify-content: left;
-
   }
   .social-media-footer {
     text-align: left;
@@ -1290,5 +1302,15 @@ img {
     border-radius: 4px;
     padding: 72px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office1@2x.jpg");
   }
 }
