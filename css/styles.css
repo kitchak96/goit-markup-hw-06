@@ -547,8 +547,8 @@ p {
 }
 .footer {
   background-color: #2e2f42;
- /* padding: 100px 0;*/
- padding: 96px 0;
+  /* padding: 100px 0;*/
+  padding: 96px 0;
 }
 
 .footer-title {
@@ -572,8 +572,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-  
-  
 }
 
 .footer-text {
@@ -591,7 +589,7 @@ p {
   display: flex;
   /*align-items: baseline;*/
   margin: 0 auto;
-  width: 320px;
+
   flex-direction: column;
   justify-content: center;
 }
@@ -666,13 +664,12 @@ img {
   margin-right: 0;
   margin-left: auto;
   margin-top: 72px;
-  
 }
 
 .subscribe-title {
   width: 100%;
   text-align: center;
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -681,7 +678,7 @@ img {
 }
 
 .subscribe-form {
-width: 100%;
+  width: 100%;
   display: flex;
   /* gap: 24px; */
   gap: 16px;
@@ -740,8 +737,8 @@ width: 100%;
   margin-left: 16px;
 }
 .container-for-container-for-footer {
- /* margin-left: 120px; */
- margin-top: 72px;
+  /* margin-left: 120px; */
+  margin-top: 72px;
 }
 .modal-container {
   position: fixed;
@@ -1054,8 +1051,11 @@ width: 100%;
     flex-direction: column;
     gap: 12px;
   }
+  .footer {
+    padding: 100px 0;
+  }
 }
-
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (min-width: 1158px) {
   .container-two {
     padding: 0 15px;
@@ -1118,14 +1118,11 @@ width: 100%;
   .section-one {
     height: 600px;
     padding: 188px 0;
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient
+        (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/people-office1.jpg);
   }
   .nav-list {
@@ -1148,4 +1145,52 @@ width: 100%;
     flex-direction: row;
     gap: 40px;
   }
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-title {
+    text-align: left;
+    width: 115px;
+    height: 24px;
+  }
+  .footer-text {
+    width: 264px;
+    margin-top: 0px;
+  }
+  .container-footer {
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .social-media-footer {
+    text-align: left;
+  }
+  .social-media-list-footer {
+    justify-content: left;
+
+    margin: 0;
+  }
+
+  .subscribe-container {
+    margin-top: 0px;
+  }
+
+  .subscribe-title {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .subscribe-form {
+    gap: 24px;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 0px;
+  }
+
+  .subscribe-button {
+    min-width: 165px;}
+  .container-for-container-for-footer {
+      margin-left: 120px;
+      margin-right: 80px;
+    }
 }
