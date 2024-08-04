@@ -753,6 +753,7 @@ img {
 
   opacity: 0;
   pointer-events: none;
+
 }
 
 .is-open {
@@ -763,16 +764,19 @@ img {
 
 .modal-window {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  bottom: 9px;
+  width: calc(100%-32px);
+  height: calc(100%-17px);
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
   padding: 72px 24px 24px;
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button {
@@ -1116,6 +1120,21 @@ img {
  justify-content: left;
  display: flex;
 }
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 72px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (min-width: 1158px) {
@@ -1257,5 +1276,19 @@ img {
   .container-for-container-for-footer {
     margin-left: 120px;
     margin-right: 80px;
+  }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 72px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
